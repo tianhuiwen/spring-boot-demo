@@ -27,6 +27,7 @@ spec:
       containers:
         - name: maven
           image: 192.168.174.179:5000/maven:latest
+          imagePullPolicy: IfNotPresent
           ports:
           - containerPort: 8080
           env:
